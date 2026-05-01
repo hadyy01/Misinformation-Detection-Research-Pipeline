@@ -64,17 +64,6 @@ Position this project as a comparative misinformation-detection study rather tha
 - Transformer track: `distilbert-base-uncased` fine-tuning path for stronger contextual language modeling.
 - Evaluation: accuracy, precision, recall, F1, ROC-AUC, confusion matrix, and experiment summaries saved to disk.
 
-## Suggested Benchmark Table
-
-Use a table like this in your README once you run experiments:
-
-| Model | Family | Accuracy | F1 | ROC-AUC | Notes |
-|---|---|---:|---:|---:|---|
-| Logistic Regression | Classical | TBD | TBD | TBD | Strong interpretability baseline |
-| Linear SVM | Classical | TBD | TBD | TBD | Robust sparse-text baseline |
-| BiLSTM | Neural | TBD | TBD | TBD | Sequence model on cleaned article text |
-| DistilBERT | Transformer | TBD | TBD | TBD | Contextual baseline for stronger semantic modeling |
-
 ## Quick Start
 
 1. Create a virtual environment and install dependencies.
@@ -108,11 +97,3 @@ Artifacts are written to the configured output directory inside `artifacts/`.
 - Measure calibration and threshold sensitivity.
 - Add error analysis slices for political topic, article length, and source style.
 - Track experiments with MLflow or Weights & Biases.
-
-## Resume-Friendly Talking Points
-
-- Refactored a Colab notebook into a modular, reproducible NLP research repository with config-driven experimentation.
-- Built classical, neural, and transformer-ready baselines for misinformation detection and standardized evaluation with ROC-AUC, F1, and confusion-matrix reporting.
-- Improved project maintainability through package structure, automated reporting, tests, and architecture documentation.
-
-See [docs/architecture.md](/C:/Users/resea/Documents/Codex/2026-05-01-files-mentioned-by-the-user-copy/docs/architecture.md) for the technical flow and [docs/portfolio_positioning.md](/C:/Users/resea/Documents/Codex/2026-05-01-files-mentioned-by-the-user-copy/docs/portfolio_positioning.md) for GitHub and resume positioning ideas.
