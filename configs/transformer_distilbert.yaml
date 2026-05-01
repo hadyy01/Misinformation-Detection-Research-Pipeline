@@ -1,0 +1,35 @@
+project_name: false-information-flagging
+random_seed: 42
+dataset:
+  true_path: data/raw/True.csv
+  fake_path: data/raw/Fake.csv
+  text_column: text
+  title_column: title
+  drop_columns:
+    - subject
+    - date
+  merge_title: true
+  label_column: label
+preprocessing:
+  lowercase: true
+  strip_html: true
+  strip_urls: true
+  remove_bracketed_text: true
+  remove_stopwords: false
+  remove_punctuation: false
+split:
+  test_size: 0.2
+  stratify: true
+model:
+  family: transformer
+  name: distilbert_fake_news
+  transformer:
+    pretrained_model_name: distilbert-base-uncased
+    max_length: 256
+    weight_decay: 0.01
+training:
+  batch_size: 8
+  epochs: 2
+  learning_rate: 2.0e-5
+artifacts:
+  output_dir: artifacts/transformer_distilbert

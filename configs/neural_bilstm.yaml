@@ -1,0 +1,39 @@
+project_name: false-information-flagging
+random_seed: 42
+dataset:
+  true_path: data/raw/True.csv
+  fake_path: data/raw/Fake.csv
+  text_column: text
+  title_column: title
+  drop_columns:
+    - subject
+    - date
+  merge_title: true
+  label_column: label
+preprocessing:
+  lowercase: true
+  strip_html: true
+  strip_urls: true
+  remove_bracketed_text: true
+  remove_stopwords: false
+  remove_punctuation: false
+split:
+  test_size: 0.2
+  stratify: true
+model:
+  family: neural
+  name: bidirectional_lstm
+  neural:
+    max_tokens: 20000
+    sequence_length: 400
+    embedding_dim: 128
+    lstm_units: 96
+    dense_units: 64
+    dropout: 0.3
+training:
+  batch_size: 64
+  epochs: 5
+  learning_rate: 0.001
+artifacts:
+  output_dir: artifacts/neural_bilstm
+
