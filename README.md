@@ -13,13 +13,12 @@ This repository turns an exploratory notebook into a research-oriented machine l
 
 - Separates data loading, preprocessing, modeling, evaluation, and reporting into reusable Python modules.
 - Fixes the original workflow issue where TF-IDF features were mixed with sequence-model layers in the same training path.
-- Supports two clear experiment families:
 - Supports three clear experiment families:
   - `classical`: TF-IDF + linear baseline models for fast, reproducible comparisons.
   - `neural`: sequence-based BiLSTM experiments built on raw text rather than sparse TF-IDF matrices.
   - `transformer`: fine-tuning-ready transformer configuration for stronger modern NLP baselines.
 - Uses config-driven runs so experiment settings are explicit, repeatable, and easy to compare.
-- Preserves the original notebook as a research artifact in [notebooks/legacy_research_notebook.ipynb](/C:/Users/resea/Documents/Codex/2026-05-01-files-mentioned-by-the-user-copy/notebooks/legacy_research_notebook.ipynb).
+- Preserves the original notebook as a research artifact in [notebooks/legacy_research_notebook.ipynb](notebooks/legacy_research_notebook.ipynb).
 
 ## Repository Layout
 
