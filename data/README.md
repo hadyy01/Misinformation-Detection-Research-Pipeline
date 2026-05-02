@@ -1,7 +1,7 @@
 # Data Setup
 Link to the dataset: 
-Fake.csv: [https://drive.google.com/file/d/13Kkgmn4ecC9v0ZHE0pXuYzYsfygCgR_D/view?usp=sharing ](url)
-True csv: [https://drive.google.com/file/d/13V-NYQf6_wFuNIBPzaTqWmtFe2iE3izt/view?usp=sharing](url)
+- [Fake.csv]([url](https://drive.google.com/file/d/13Kkgmn4ecC9v0ZHE0pXuYzYsfygCgR_D/view?usp=sharing))
+- [True csv]([url](https://drive.google.com/file/d/13V-NYQf6_wFuNIBPzaTqWmtFe2iE3izt/view?usp=sharing))
 Place the raw dataset files here before training:
 
 - `data/raw/True.csv`
